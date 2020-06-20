@@ -6,14 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.features.predict.PredictFrag">
 
+
+    <TextView
+        android:id="@+id/tv_add_title"
+        style="@style/TextViewGeneral"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/ambil_gambar"
+        android:textAlignment="center"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="@dimen/text_default_22"
+        app:layout_constraintBottom_toTopOf="@+id/iv_predict"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/iv_predict"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_marginTop="@dimen/margin_default"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="104dp"
         android:contentDescription="@string/ic_add"
         android:src="@drawable/mini_logo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

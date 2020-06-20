@@ -45,6 +45,7 @@
     <string name="confirm_password">Konfirmasi Password</string>
     <string name="password_not_match">Password Tidak Cocok</string>
     <string name="submit_image">SUBMIT IMAGE</string>
+    <string name="ambil_gambar">Klik Untuk Ambil Gambar</string>
     <string name="image_name">Image Name</string>
     <string name="desc">Description</string>
     <string name="get_photo">Take A Photo</string>
@@ -52,7 +53,7 @@
     <string name="camera_">Camera</string>
     <string name="gallery_">Gallery</string>
     <string name="ic_add">Ikon Tambah</string>
-    <string name="predict">Predict</string>
+    <string name="predict">Prediksi</string>
     <string name="ic_home">Ikon Home</string>
     <string name="please_choose_img">Silahkan pilih gambar</string>
     <string name="predict_realtime">Realtime Predict</string>
