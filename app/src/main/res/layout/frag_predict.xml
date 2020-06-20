@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.features.predict.PredictFrag">
+
+    <ImageView
+        android:id="@+id/iv_predict"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="@dimen/margin_default"
+        android:contentDescription="@string/ic_add"
+        android:src="@drawable/mini_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_predict"
+        style="@style/ButtonGeneralStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:padding="@dimen/margin_small"
+        android:text="@string/predict"
+        app:backgroundTint="@color/tfe_color_primary_dark"
+        app:cornerRadius="@dimen/margin_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_predict" />
+
+   <!-- <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_predict_realtime"
+        style="@style/ButtonGeneralStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:padding="@dimen/margin_small"
+        android:text="@string/predict_realtime"
+        app:backgroundTint="@color/tfe_color_primary_dark"
+        app:cornerRadius="@dimen/margin_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_predict" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

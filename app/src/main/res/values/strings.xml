@@ -1,0 +1,59 @@
+<resources>
+    <string name="tfe_ic_app_name" translation_description="Image Classification demo app [CHAR_LIMIT=40]">TFL Classify</string>
+    <string name="tfe_ic_camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
+    <string name="tfe_ic_gpu_quant_error" translation_description="Error regarding GPU support for Quant models[CHAR_LIMIT=60]">GPU does not yet supported quantized models.</string>
+    <string name="tfe_ic_model" translatable="false">Model:</string>
+    <string-array name="tfe_ic_models" translatable="false">
+        <!--        <item>Quantized_EfficientNet</item>-->
+        <!--        <item>Float_EfficientNet</item>-->
+        <!--        <item>Quantized_MobileNet</item>-->
+        <!--        <item>Float_MobileNet</item>-->
+        <item>Dermiscan_Model</item>
+    </string-array>
+
+    <string name="tfe_ic_device" translatable="false">Device:</string>
+    <string name="ic_register">Ikon register</string>
+    <string name="register_page">Register Page</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="register">Daftar</string>
+    <string name="privacy_policy"><![CDATA[Syarat & Ketentuan Berlaku]]></string>
+    <string name="dont_have_account">Belum Punya Akun? Daftar</string>
+    <string name="app_name">Dermiscan</string>
+    <string name="yes_">Ya</string>
+    <string name="no_">Tidak</string>
+    <string-array name="tfe_ic_devices" translatable="false">
+        <item>CPU</item>
+        <item>GPU</item>
+        <item>NNAPI</item>
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="success_">Success</string>
+    <string name="title_list">List</string>
+    <string name="title_add">Tambah</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_profile">Profileku</string>
+    <string name="email">Email</string>
+    <string name="logout">Keluar</string>
+    <string name="login">Masuk</string>
+    <string name="login_page">Login Page</string>
+    <string name="ic_login">Ikon Login</string>
+    <string name="confirm_password">Konfirmasi Password</string>
+    <string name="password_not_match">Password Tidak Cocok</string>
+    <string name="submit_image">SUBMIT IMAGE</string>
+    <string name="image_name">Image Name</string>
+    <string name="desc">Description</string>
+    <string name="get_photo">Take A Photo</string>
+    <string name="submit">Submit</string>
+    <string name="camera_">Camera</string>
+    <string name="gallery_">Gallery</string>
+    <string name="ic_add">Ikon Tambah</string>
+    <string name="predict">Predict</string>
+    <string name="ic_home">Ikon Home</string>
+    <string name="please_choose_img">Silahkan pilih gambar</string>
+    <string name="predict_realtime">Realtime Predict</string>
+</resources>

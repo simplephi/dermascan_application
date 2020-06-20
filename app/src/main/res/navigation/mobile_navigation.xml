@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="org.tensorflow.lite.codedirect.dermiscan.ui.main.features.home.HomeFrag"
+        android:label="@string/title_home"
+        tools:layout="@layout/frag_home" />
+
+    <fragment
+        android:id="@+id/navigation_add"
+        android:name="org.tensorflow.lite.codedirect.dermiscan.ui.main.features.predict.PredictFrag"
+        android:label="@string/title_add"
+        tools:layout="@layout/frag_predict" >
+        <action
+            android:id="@+id/action_navigation_add_to_classifierActivity"
+            app:destination="@id/classifierActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="org.tensorflow.lite.codedirect.dermiscan.ui.main.features.profile.ProfileFrag"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/frag_profile" />
+    <activity
+        android:id="@+id/classifierActivity"
+        android:name="org.tensorflow.lite.codedirect.dermiscan.ui.tf.ClassifierActivity"
+        android:label="ClassifierActivity" />
+</navigation>

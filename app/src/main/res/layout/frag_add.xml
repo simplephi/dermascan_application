@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.main.features.add.AddFrag">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_default">
+
+        <TextView
+            android:id="@+id/tv_add_title"
+            style="@style/TextViewGeneral"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_image"
+            android:textAlignment="center"
+            android:textColor="@color/primaryDarkColor"
+            android:textSize="@dimen/text_default_22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_add_img_name"
+            style="@style/TextInputLayoutBoxStylePrimary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_add_title">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_add_img_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/image_name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_add_desc"
+            style="@style/TextInputLayoutBoxStylePrimary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ti_add_img_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_add_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/desc"
+                android:inputType="textMultiLine" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spin_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:entries="@array/gender"
+            android:padding="@dimen/margin_small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ti_add_desc" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_add_age"
+            style="@style/TextInputLayoutBoxStylePrimary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spin_add">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_add_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/desc"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add_photo"
+            style="@style/ButtonGeneralStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:drawableEnd="@drawable/ic_baseline_camera_24"
+            android:drawablePadding="@dimen/margin_small"
+            android:padding="@dimen/margin_small"
+            android:text="@string/get_photo"
+            app:backgroundTint="@color/primaryLightColor"
+            app:cornerRadius="@dimen/margin_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ti_add_age" />
+
+        <ImageView
+            android:id="@+id/iv_add_picture"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="@dimen/margin_small"
+            android:contentDescription="@string/ic_add"
+            android:src="@drawable/mini_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_add_photo" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_predict"
+            style="@style/ButtonGeneralStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:padding="@dimen/margin_small"
+            android:text="@string/predict"
+            app:backgroundTint="@color/tfe_color_primary_dark"
+            app:cornerRadius="@dimen/margin_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_add_picture" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_submit"
+            style="@style/ButtonGeneralStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:padding="@dimen/margin_small"
+            android:text="@string/submit"
+            app:backgroundTint="@color/primaryDarkColor"
+            app:cornerRadius="@dimen/margin_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_predict" />
+
+        <ProgressBar
+            android:id="@+id/loading_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/primaryDarkColor"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/iv_add_picture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_add_title" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
