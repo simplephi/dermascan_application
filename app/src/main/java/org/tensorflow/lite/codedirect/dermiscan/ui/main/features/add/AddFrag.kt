@@ -50,8 +50,10 @@ class AddFrag : Fragment(), View.OnClickListener {
 
     private lateinit var bitmap: Bitmap
     private val INPUT_SIZE = 150
-    private val MODEL_PATH = "model_fp_72.tflite"
-    private val LABEL_PATH = "model_fp_72.txt"
+//    private val MODEL_PATH = "model_fp_72.tflite"
+//    private val LABEL_PATH = "model_fp_72.txt"
+    private val MODEL_PATH = "model_fp_89_66.tflite"
+    private val LABEL_PATH = "model_fp_89_66.txt"
     private lateinit var classifier: Classifier
     private val compositeDisposable by lazy {
         CompositeDisposable()

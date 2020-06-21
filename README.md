@@ -27,12 +27,19 @@ Based on the results from the test model, we get the value of accuracy.
 
 Accuracy
 ```
- 0.7310404
+ 0.8123
+```
+
+Download
+
+For download of Dermascan Application Package File (APK), please check and visit this link
+```
+https://github.com/simplephi/dermascan_application/releases/tag/v1.0
 ```
 
 ### Techniques
 
-We use CNN architecture and image augmentation to train models with an accuracy rate of up to 73%
+We use CNN architecture and image augmentation to train models with an accuracy rate of up to 82%
 
 ## Requirements
 
