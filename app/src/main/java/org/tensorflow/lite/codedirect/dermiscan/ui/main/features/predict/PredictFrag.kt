@@ -36,9 +36,9 @@ class PredictFrag : Fragment(), View.OnClickListener {
 
     private val CAMERA_PERMISSION = 100
     private var bitmap: Bitmap? = null
-    private val INPUT_SIZE = 150
-    private val MODEL_PATH = "model_fp_72.tflite"
-    private val LABEL_PATH = "model_fp_72.txt"
+    private val INPUT_SIZE = 148
+    private val MODEL_PATH = "model_fp_89_66.tflite"
+    private val LABEL_PATH = "model_fp_89_66.txt"
     private lateinit var classifier: Classifier
     private val compositeDisposable by lazy {
         CompositeDisposable()
