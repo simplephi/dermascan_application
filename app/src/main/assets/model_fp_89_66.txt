@@ -1,7 +1,7 @@
-MEL
-NV
-BCC
-AK
-BKL
-DF
-VASC
+Melanoma (MEL)
+Melanocytic Nevi (NV)
+Basal Cell Carcinoma (BCC)
+Actinic Keratoses (AK)
+Benign Keratosis (BKL)
+Dermatofibroma (DF)
+Vascular Lesions (VASC)
